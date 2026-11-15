@@ -1,0 +1,20 @@
+[project]
+name = "overcooked-ppo-dqn"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Peining Zhang", email = "peiniz1@ucil.edu" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=2.2.6",
+    "stable-baselines3>=2.9.2",
+]
+
+[project.scripts]
+overcooked-ppo-dqn = "overcooked_ppo_dqn:main"
+
+[build-system]
+requires = ["uv_build>=0.13.8,<0.14.0"]
+build-backend = "uv_build"
