@@ -8,7 +8,8 @@ authors = [
 ]
 requires-python = ">=3.10"
 dependencies = [
-    "numpy>=2.2.6",
+    "numpy==1.26.4",
+    "overcooked-ai",
     "stable-baselines3>=2.9.2",
 ]
 
@@ -18,3 +19,6 @@ overcooked-ppo-dqn = "overcooked_ppo_dqn:main"
 [build-system]
 requires = ["uv_build>=0.13.8,<0.14.0"]
 build-backend = "uv_build"
+
+[tool.uv.sources]
+overcooked-ai = { git = "https://github.com/HumanCompatibleAI/overcooked_ai.git" }
